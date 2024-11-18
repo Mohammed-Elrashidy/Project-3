@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>project 3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+    </head>
+    <body> 
+        <nav class="navbar navbar-expand-lg fixed-top text-dark" style="background-color:  #d9b38c;">
+            <div class="container-fluid ">
+              <a class="navbar-brand border border-top-0 border-start-0 border-bottom-0 pe-2 " href="#" style="color: #5A2A27;"> <img src="images/download.jpeg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Shelf Haven</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: #5A2A27;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #5A2A27;">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle shadow border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #5A2A27;">
+                      Genre
+                    </a>
+                    <ul class="dropdown-menu" style="color: #5A2A27;">
+                      <li><a class="dropdown-item" href="#">Fiction</a></li>
+                      <li><a class="dropdown-item" href="#">Non-Fiction</a></li>
+                      <li><a class="dropdown-item" href="#">Children's Books</a></li>
+                      <li><a class="dropdown-item" href="#">Young Adult</a></li>
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Mystery & Thriller</a></li>
+                      <li><a class="dropdown-item" href="#">Romance</a></li>
+                      <li><a class="dropdown-item" href="#">Graphic Novels/Comics</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true" style="color: #5A2A27;">Blog</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit" style="color: #5A2A27;">Search</button>
+                </form> 
+                <button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                    login
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="/action_page.php">
+                                <div class="mb-3 mt-3">
+                                  <label for="email" class="form-label">Email:</label>
+                                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="pwd" class="form-label">Password:</label>
+                                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                                </div>
+                                <div class="form-check mb-3">
+                                  <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                  </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary ms-1" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                
+                
+                
+                
+              </div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active ">
+                <img src="images/slide1.png" class="d-block w-100" alt="..." style="height: 100vh;">
+                <div class="carousel-caption  d-md-block">
+                  <h2>1</h2>
+                  <p>"A room without books is like a body without a soul." — Cicero.</p>
+                  <button class="btn btn-dark">Learn more</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/slide 2.png" class="d-block w-100" alt="..." style="height: 100vh;">
+                <div class="carousel-caption  d-md-block">
+                  <h2>2</h2>
+                  <p>"The only thing you absolutely have to know is the location of the library." — Albert Einstein</p>
+                  <button class="btn btn-dark">Learn more</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/slide 3.jpg" class="d-block w-100" alt="..." style="height: 100vh;">
+                <div class="carousel-caption  d-md-block">
+                  <h2>3</h2>
+                  <p>"Books are a uniquely portable magic." — Stephen King</p>
+                  <button class="btn btn-dark">Learn more</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="container-fluid   rounded mt-3" style="background-color: #cc9966;color: #5A2A27;">
+            <div class="welcome-section container pt-3" style="height: 220px;" style="background-color: #cc9966;">
+              <h2>Welcome</h2>
+              <p>Welcome to Shelf Haven — your sanctuary for stories, imagination, and discovery. At Shelf Haven, we believe every book is a gateway to new adventures, timeless wisdom, and unforgettable characters. Whether you're seeking the latest bestsellers, classic literature, or hidden gems from indie authors, our carefully curated collection has something for every reader.</p>
+              <button type="button" class="btn btn-primary">Learn more</button>
+            </div>
+          </div>
+          <hr>
+          <div class="container-fluid rounded mb-3" style="background-color: #cc9966;color: #5A2A27;">
+            <div class="container d-flex justify-content-center align-items-center " style="height: 180px;">
+              <div class="title-holder fs-1"> Reasons To Read Books</div>
+            </div>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item shadow">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Reason #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #cc9966;color: #5A2A27;">
+                  <strong>Mental Stimulation & Cognitive Benefits.</strong> Reading keeps your brain active and engaged, helping to improve memory, focus, and problem-solving skills. It can delay cognitive decline as you age and increase your vocabulary and comprehension.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item shadow">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Reason #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #cc9966;color: #5A2A27;">
+                  <strong>Escape & Stress Relief</strong> Books offer a form of escapism, allowing you to immerse yourself in different worlds, cultures, and perspectives. They can be a powerful way to relax and reduce stress, providing a break from daily pressures.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item shadow">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Reason #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #cc9966;color: #5A2A27;">
+                  <strong>Personal Growth & Empathy.</strong> Reading expands your knowledge, opens your mind to new ideas, and helps you develop a deeper understanding of other people's experiences. It enhances empathy by allowing you to see the world through the eyes of different characters.
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="container-fluid  rounded mb-3" style="background-color: #cc9966;color: #5A2A27;">
+            <div class="container d-flex justify-content-center align-items-center ">
+              <div class="title-holder fs-1">Preference</div>
+            </div>
+          </div>
+          <div class="container-fluid " style="background-color: #cc9966;color: #5A2A27;">
+            <div class="container pb-5">
+              <h2 class="pt-3">Enter you preferred Genre</h2>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Send
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Preference</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Your comment is taken into account when recommending books to you.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label for="comment" class=" d-block">Comment:</label>
+              <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+            </div>
+          </div>
+          <hr>
+          
+          <div class="container-fluid " style="background-color: #cc9966;color: #5A2A27;">
+            <div class="container pb-5">
+              <h2 class="pt-3"  >why do you pefer those genres?</h2>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Send
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Preference</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Your comment is taken into account when recommending books to you.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label for="comment" class=" d-block">Comments:</label>
+              <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+            </div>
+          </div>
+          <hr>
+          <div class="container-fluid " style="background-color: #cc9966;color: #5A2A27;">
+            <div class="container pb-5">
+              <h2 class="pt-3">Anything else to take into account?</h2>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Send
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Preference</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Your comment is taken into account when recommending books to you.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label for="comment" class=" d-block">Comments:</label>
+              <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+            </div>
+          </div>
+          <hr>
+          <div class="container-fluid">
+            <div class="bridge-img">
+              <div class="bridge-img-overlay">
+
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="container-fluid  rounded" style="background-color: #cc9966;color: #5A2A27;">
+            <div class="container d-flex justify-content-center align-items-center ">
+              <div class="title-holder fs-1">popular Books</div>
+            </div>
+          </div>
+          <hr>
+          <div class="container-fluid">
+            <div class="container-fluid ">
+              <div class="row justify-content-around">
+                <div class="card col-lg-3 col-10 my-4 pt-3 shadow shadow-danger-emphasis popular-books "  >
+                  <img src="images/card 1.png" class="card-img-top" alt="..." style="height: 300px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Dolly Alderton</h5>
+                    <p class="card-text">The wildly funny, occasionally heartbreaking internationally bestselling memoir about growing up, growing older, and learning to navigate friendships, jobs, loss, and love along the ride                    </p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                  </div>
+                </div>
+                <div class="card col-lg-3 mx-lg-4 col-10 my-4 pt-3 shadow shadow-danger-emphasis popular-books" >
+                  <img src="images/card 2.jpg" class="card-img-top" alt="..." style="height: 300px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Emily Henry</h5>
+                    <p class="card-text">A shimmering, joyful new novel about a pair of opposites with the wrong thing in common, from #1 New York Times bestselling author Emily Henry.</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                  </div>
+                </div>
+                <div class="card col-lg-3 col-10 my-4 pt-3 shadow shadow-danger-emphasis popular-books" >
+                  <img src="images/card 3.jpeg" class="card-img-top" alt="..." style="height: 300px;">
+                  <div class="card-body">
+                    <h5 class="card-title">James McBride</h5>
+                    <p class="card-text">“A murder mystery locked inside a Great American Novel . . . Charming, smart, heart-blistering, and heart-healing.” —Danez Smith, The New York Times Book Review</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                  </div>
+                </div>
+                <div class="card  col-lg-3 my-4 pt-3 shadow shadow-danger-emphasis col-10 my-4 pt-3 shadow shadow-danger-emphasis popular-books" >
+                  <img src="images/card 4.jpeg" class="card-img-top" alt="..." style="height: 300px;"> 
+                  <div class="card-body">
+                    <h5 class="card-title">Michelle Zauner</h5>
+                    <p class="card-text">"Crying in H Mart is a wonder: A beautiful, deeply moving coming-of-age story about mothers and daughters, love and grief, food and identity. It blew me away, even as it broke my heart."</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                  </div>
+                </div>
+                <div class="card  col-lg-3 my-4 pt-3 shadow shadow-danger-emphasis mx-lg-4 col-10 my-4 pt-3 shadow shadow-danger-emphasis popular-books" >
+                  <img src="images/card 5.jpg" class="card-img-top" alt="..." style="height: 300px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Percival Everett</h5>
+                    <p class="card-text"> A brilliant, action-packed reimagining of Adventures of Huckleberry Finn, both harrowing and darkly humorous, told from the enslaved Jim's point of view</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                  </div>
+                </div>
+                <div class="card  col-lg-3 my-4 pt-3 shadow shadow-danger-emphasis col-10 my-4 pt-3 shadow shadow-danger-emphasis popular-books" >
+                  <img src="images/card 6.jpg" class="card-img-top" alt="..." style="height: 300px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Matt Haig</h5>
+                    <p class="card-text">The dazzling reader-favorite about the choices that go into a life well lived, from the acclaimed author of How To Stop Time and The Comfort Book.</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                  </div>
+                </div>
+                <div class="card col-lg-3 mr-lg-4 col-10 my-4 pt-3 shadow shadow-danger-emphasis popular-books" >
+                  <img src="images/card 7.jpg" class="card-img-top" alt="..." style="height: 300px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Dav Pilkey</h5>
+                    <p class="card-text">Our canine superhero returns in DOG MAN: THE SCARLET SHEDDER, the suspenseful and hilarious twelfth graphic novel in the #1 worldwide bestselling series by award-winning author and illustrator Dav Pilkey!</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                  </div>
+                </div>
+                <div class="card col-lg-3 col-10 my-4 pt-3 shadow shadow-danger-emphasis popular-books" >
+                  <img src="images/card 8.jpg" class="card-img-top" alt="..." style="height: 300px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Rashid Khalidi</h5>
+                    <p class="card-text">A landmark history of one hundred years of war waged against the Palestinians from the foremost US historian of the Middle East, told through pivotal events and family history</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="container-fluid  rounded" style="background-color: #cc9966;">
+            <div class="container d-flex justify-content-center align-items-center ">
+              <div class="title-holder fs-1">Famous Writers</div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="teams row d-flex justify-content-between pt-3 ">
+              <div class="card img-fluid col-lg-3 col-12 teams1 position-relative text-light">
+                <img class="card-img-top" src="images/team 1.jpeg" alt="Card image" style="width:100%;height: 500px;">
+                <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.5);">
+                  <h4 class="card-title">Stephen King</h4>
+                  <p class="fs-5" >Widely known for his horror novels, he has been crowned the "King of Horror". </p>
+                  <p class="fs-6" style="padding-bottom: 170px;"><i class="fa-regular fa-clock"></i>&nbsp;Born September 21, 1947</p>
+                  <img src="images/team 1.jpeg" alt="" class="rounded-circle d-block" width="70" height="70" >
+                  <a href="#" class="btn btn-primary my-3">Read more</a>
+                </div>
+              </div>
+              <div class="card img-fluid col-lg-3 col-12 my-lg-0 my-4 teams1 text-light">
+                <img class="card-img-top" src="images/team 2.jpg" alt="Card image" style="width:100%;height: 500px;">
+                <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.5);">
+                  <h4 class="card-title">J. K. Rowling</h4>
+                  <p class="fs-5" >She wrote Harry Potter, published from 1997 to 2007</p>
+                  <p class="fs-6" style="padding-bottom: 200px;"><i class="fa-regular fa-clock"></i>&nbsp;July 31, 1965</p>
+                  <img src="images/team 2.jpg" alt="" class="rounded-circle d-block" width="70" height="70" >
+                  <a href="#" class="btn btn-primary my-3">Read more</a>
+                </div>
+              </div>
+              <div class="card img-fluid col-lg-3 col-12 teams1 text-light">
+                <img class="card-img-top" src="images/team 3.jpg" alt="Card image" style="width:100%;height: 500px;">
+                <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.5);">
+                  <h4 class="card-title">Margaret Atwood</h4>
+                  <p class="fs-5" >Canadian novelist, poet, and literary critic. Since 1961</p>
+                  <p class="fs-6" style="padding-bottom: 200px;"><i class="fa-regular fa-clock"></i>&nbsp;November 18, 1939</p>
+                  <img src="images/team 3.jpg" alt="" class="rounded-circle d-block" width="70" height="70" >
+                  <a href="#" class="btn btn-primary my-3">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+
+          <hr>
+          <div class="container-fluid ">
+            <div class="container d-flex justify-content-center align-items-center ">
+              <div class="title-holder fs-1 ">Audio Books</div>
+            </div>
+          </div>
+          <div class="container-fluid pt-5">
+            <div class="container-fluid d-flex flex-column justify-content-between align-items-center">
+              <div class="card mb-3  col-10 shadow audio-card" >
+                <div class="row g-0">
+                  <div class="col-md-4" style="height: 300px;">
+                    <img src="images/audio1.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title border border-end-0 border-start-0 border-top-0 border-3 d-inline-block border-danger " > Fourth wing</h5>
+                      
+                      <p class="card-text">Fourth Wing by Rebecca Yarros follows the story of Violet Sorrengail, a young woman forced by her mother to join the Riders Quadrant at Basgiath War College. Despite her physical frailty, Violet must train to become a dragon rider in a brutal and highly competitive environment. The plot delves into her struggle for survival, alliances, and unexpected romantic entanglements, especially with Xaden Riorson, the son of a rebel leader.</p>
+                      
+                      <p class="fs-6"><i class="fa-regular fa-clock"></i>&nbsp;Published October 31, 2012</p>
+                      <div class="btn-group" role="group" aria-label="Default button group">
+                        <button type="button" class="btn btn-outline-primary">Listen more</button>
+                        <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-pause"></i></button>
+                        <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-play"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3  col-10 shadow audio-card" >
+                <div class="row g-0">
+                  <div class="col-md-4" style="height: 300px;">
+                    <img src="images/audio 2.jpg" class="rounded-start h-100 w-100" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title border border-end-0 border-start-0 border-top-0 border-3 d-inline-block border-danger"> Lights Out</h5>
+                      <p class="card-text">"Lights Out" by Natalie Walters is a suspenseful thriller and the first installment in The SNAP Agency series. The story follows CIA analyst Brynn Taylor, who has developed a program aimed at combating terrorism. She hosts a conference involving international intelligence agents, but things take a dangerous turn when an Egyptian spy, Remon Riad, goes missing.</p>
+                      <p class="fs-6"><i class="fa-regular fa-clock"></i>&nbsp;Published September 11, 2007</p>
+                      <div class="btn-group" role="group" aria-label="Default button group">
+                        <button type="button" class="btn btn-outline-primary">Listen more</button>
+                        <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-pause"></i></button>
+                        <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-play"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="card mb-3  col-10 shadow audio-card" >
+                <div class="row g-0">
+                  <div class="col-md-4" style="height: 300px;" >
+                    <img src="images/audio 3.jpg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title border border-end-0 border-start-0 border-top-0 border-3 d-inline-block border-danger">What We Hide</h5>
+                      <p class="card-text">"What We Hide" by Marthe Jocelyn is a compelling young adult novel set during the Vietnam War era. The story unfolds at a British boarding school, where several teenagers grapple with their own secrets and personal issues. The book is told from multiple perspectives, each offering a unique narrative style like letters, diary entries, and screenplay formats, adding a distinctive voice to each character’s story.</p>
+                      <p class="fs-6"><i class="fa-regular fa-clock"></i>&nbsp;Published May 21, 1999</p>
+                      <div class="btn-group" role="group" aria-label="Default button group">
+                        <button type="button" class="btn btn-outline-primary">Listen more</button>
+                        <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-pause"></i></button>
+                        <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-play"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="container-fluid ">
+            <div class="container d-flex justify-content-center align-items-center ">
+              <div class="title-holder fs-1 ">Socials</div>
+            </div>
+<div class="container-fluid ">
+<div class="container row justify-content-around m-auto">                
+<div class="socials-container  m-auto text-center justify-content-around">
+  <a data-social="Twitter" style="--accent-color: #000000;" href="#" class="m-auto" >
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
+  <a data-social="YouTube" style="--accent-color: #ff0000;" href="#" class="m-auto">
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+  <a data-social="Facebook" style="--accent-color: #001aff;" href="#" class="m-auto">
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
+  <a data-social="Instagram" style="--accent-color: #ff007b;" href="#" class="m-auto">
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
+  <a data-social="TikTok" style="--accent-color: #9b6552;" href="#" class="m-auto">
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+</div>
+</div>     
+</div>             
+
+          <hr>
+
+          <div class="container-fluid mt-5 pt-5" style="background-color:  #d9b38c;color: #5A2A27;">
+            <div class="container-fluid row d-flex justify-content-between">
+              <div class="footer1 col-lg-3 col-2 text-center border border-end-0 border-start-0 border-3 pb-3 pt-3 mx-3"> 
+                <img src="images/98879-final.png" alt="" width="50" height="50" class="rounded-circle ">
+                <span class="fs-3  ps-1 ">Contact info</span>
+              </div>
+              <div class="footer1 col-lg-3 col-2 mx-3 text-center border border-end-0 border-start-0 border-3 pb-3 pt-3"> 
+                <img src="images/98879-final.png" alt="" width="50" height="50" class="rounded-circle ">
+                <span class="fs-3  ps-1 ">Important links</span>
+              </div>
+              <div class="footer1 col-lg-3 col-2 text-center border border-end-0 border-start-0 border-3 pb-3 pt-3 mx-3"> 
+                <img src="images/98879-final.png" alt="" width="50" height="50" class="rounded-circle ">
+                <span class="fs-3  ps-1 ">Vision</span>
+              </div>
+              <div class="footer2 col-lg-3 col-12 text-center pb-3 pt-3">
+                <p class="fs-5">Phone: +1 (800) 123-BOOK (2665)</p>
+                <p class="fs-5">Email: info@shelfhaven.com</p>
+                <p class="fs-5">123 Booklover Lane</p>
+              </div>
+              <div class="footer2 col-lg-3 col-12 text-center pb-3 pt-3">
+                <p class="fs-5">Instagram: @ShelfHavenBooks</p>
+                <p class="fs-5">Whatsapp: Shelf Haven Bookstore</p>
+                <p class="fs-5">Twitter: @ShelfHaven</p>
+              </div>
+              <div class="footer2 col-lg-3 col-12 text-center pb-3 pt-3">
+                <p class="fs-5">Cultivate a Love for Reading</p>
+                <p class="fs-5">Diverse Collection</p>
+                <p class="fs-5">Foster Community</p>
+              </div>
+              <div class="footer3 col-12 text-center py-2 border border-end-0 border-start-0 border-bottom-0 border-3">
+                <p class="fs-3">copyright &copy;  2024 Shelf Haven. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+          
+         
+
+
+
+
+
+
+
+
+
+    <script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
